@@ -1,3 +1,68 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Balqis";
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/balqis.woff2") format("woff2"),
+      url("../fonts/balqis.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/RobotoCondensed-Light.woff2") format("woff2"),
+      url("../fonts/RobotoCondensed-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+  src: url("../fonts/RobotoCondensed-LightItalic.woff2") format("woff2"),
+      url("../fonts/RobotoCondensed-LightItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/RobotoCondensed-Regular.woff2") format("woff2"),
+      url("../fonts/RobotoCondensed-Regular.woff") format("woff");
+}
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 300;
+  color: #000000;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.container {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
 
 .page-header {
   height: 100vh;
@@ -5,4 +70,61 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
+}
+
+.page-header__info {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 400;
+}
+
+.menu__list {
+  display: flex;
+}
+
+.menu__item + .menu__item {
+  margin-left: 52px;
+}
+
+.menu__link:hover {
+  text-decoration: underline;
+}
+
+.page-header__phone {
+  position: relative;
+  padding-left: 40px;
+}
+
+.page-header__phone::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  background-image: url("../images/icon-phone.svg");
+  background-repeat: no-repeat;
+}
+
+.page-header__title {
+  margin: 0;
+  padding-top: 135px;
+  text-align: center;
+  font-family: "Balqis", sans-serif;
+  font-size: 250px;
+  line-height: 334px;
+  font-weight: 300;
+}
+
+.page-header__title span {
+  display: block;
+  margin-top: -66px;
+  margin-right: 85px;
+  text-align: right;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 56px;
+  line-height: 66px;
+  font-style: italic;
 }

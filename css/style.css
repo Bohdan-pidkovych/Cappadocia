@@ -160,6 +160,8 @@ ol {
 .info__main {
   display: flex;
   align-items: center;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 .info__slider {
@@ -189,7 +191,9 @@ ol {
   flex-direction: column;
   gap: 25px;
   width: 50%;
+  max-width: 630px;
   padding-left: 55px;
+  padding-right: 15px;
 }
 
 .info__subtitle {

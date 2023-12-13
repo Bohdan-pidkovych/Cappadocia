@@ -66,6 +66,7 @@ ol {
 
 .page-section {
   padding-top: 200px;
+  /* padding-top: 10%; */
 }
 
 .title {
@@ -167,7 +168,6 @@ ol {
 
 .info__main {
   display: flex;
-  align-items: center;
   max-width: 1920px;
   margin: 0 auto;
 }
@@ -200,7 +200,6 @@ ol {
   justify-content: space-around;
   width: 50%;
   max-width: 630px;
-  min-height: 700px;
   padding-left: 55px;
   padding-right: 15px;
 }
@@ -212,7 +211,6 @@ ol {
 
 .trip__container {
   display: flex;
-  align-items: center;
   max-width: 1920px;
   margin: 0 auto;
 }
@@ -220,13 +218,15 @@ ol {
 .trip__description {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   width: 50%;
   max-width: 615px;
-  min-height: 1095px;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 55px;
+}
+
+.trip__title {
+  margin-bottom: 100px;
 }
 
 .trip__title span {
@@ -249,8 +249,92 @@ ol {
 
 .trip__link {
   align-self: flex-start;
+  margin-top: auto;
 }
 
 .trip__slider {
   width: 50%;
+}
+
+.hotel__title span {
+  margin-top: -25px;
+  margin-left: 120px;
+}
+
+.hotel__main {
+  display: flex;
+}
+
+.hotel__image {
+  margin-right: 100px;
+}
+
+.hotel__description {
+  display: flex;
+  flex-direction: column;
+}
+
+.hotel__text {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.hotel__gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 50px;
+  margin-top: auto;
+}
+
+.hotel__gallery a {
+  display: flex;
+}
+
+.hotel__gallery img {
+  width: 280px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.price__title span {
+  margin-top: -25px;
+  margin-left: 120px;
+}
+
+.price .container {
+  position: relative;
+}
+
+.price .container::after {
+  content: "";
+  position: absolute;
+  top: 115px;
+  right: -95px;
+  width: 321px;
+  height: 442px;
+  background-image: url("../images/price-bg.png");
+  background-repeat: no-repeat;
+}
+
+.price__main {
+  display: flex;
+}
+
+.price__included,
+.price__excluded {
+  width: 50%;
+  padding-right: 70px;
+}
+
+.price__subtitle {
+  margin: 0;
+  margin-bottom: 50px;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 400;
+}
+
+.price__item {
+  margin-bottom: 20px;
 }

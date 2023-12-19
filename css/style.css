@@ -83,12 +83,12 @@ ol {
 }
 
 .page-section {
-  padding-top: 10%;
+  padding-top: clamp(50px, 10%, 200px);
 }
 
 .title {
   margin-top: 0;
-  margin-bottom: 5%;
+  margin-bottom: clamp(25px, 5%, 100px);
   font-family: "Balqis", sans-serif;
   font-size: 96px;
   line-height: 128px;
@@ -283,11 +283,17 @@ ol {
     line-height: 18px;
   }
 
+  .page-header .container {
+    min-height: 100dvh;
+  }
+
   .page-header__info {
     flex-wrap: wrap;
     justify-content: center;
     row-gap: 25px;
     padding-top: 30px;
+    font-size: 18px;
+    line-height: 21px;
   }
 
   .page-header__menu {
@@ -313,16 +319,46 @@ ol {
   }
 }
 
-@media (max-width: 500px) {
-  /* .page-header__title {
-    font-size: 80px;
+@media (max-width: 375px) {
+  body {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .title {
+    font-size: 48px;
+    line-height: 64px;
+  }
+
+  .title span {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .page-header__info {
+    row-gap: 20px;
+    padding-top: 25px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .page-header__title-container {
+    padding-bottom: 85px;
+  }
+
+  .page-header__title {
+    width: 285px;
+    font-size: 65px;
   }
 
   .page-header__title span {
-    margin-top: -25px;
-    font-size: 24px;
-    margin-right: 10%;
-  } */
+    font-size: 16px;
+  }
+
+  .info__title span {
+    margin-top: -14px;
+    margin-left: 90px;
+  }
 }
 
 .info__title span {
@@ -371,6 +407,25 @@ ol {
 .info__subtitle {
   font-size: 18px;
   font-weight: 400;
+}
+
+@media (max-width: 960px) {
+  .info__main {
+    flex-wrap: wrap;
+  }
+
+  .info__slider {
+    order: 2;
+    width: 100%;
+  }
+
+  .info__description {
+    order: 1;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    padding-left: 15px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -712,52 +767,4 @@ ol {
   font-family: "Balqis", sans-serif;
   font-size: 24px;
   font-weight: 600;
-}
-
-@media (max-width: 370px) {
-  body {
-    font-size: 14px;
-    line-height: 16px;
-  }
-
-  .title {
-    font-size: 48px;
-    line-height: 64px;
-  }
-
-  .title span {
-    font-size: 14px;
-    line-height: 16px;
-  }
-
-  .page-header__title {
-    font-size: 60px;
-  }
-
-  .page-header__title span {
-    margin-top: -18px;
-    font-size: 20px;
-  }
-
-  .info__title span {
-    margin-top: -14px;
-    margin-left: 90px;
-  }
-}
-
-@media (max-width: 960px) {
-  .info__main {
-    flex-wrap: wrap;
-  }
-
-  .info__slider {
-    width: 100%;
-  }
-
-  .info__description {
-    display: block;
-    width: 100%;
-    max-width: 100%;
-    padding-left: 15px;
-  }
 }

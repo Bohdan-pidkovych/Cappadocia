@@ -294,6 +294,10 @@ ol {
     line-height: 24px;
   }
 
+  .page-header__phone {
+    padding-left: 35px;
+  }
+
   .page-header__phone::before {
     width: 25px;
     height: 25px;
@@ -338,6 +342,10 @@ ol {
 
   .page-header__title-container {
     padding-bottom: 100px;
+  }
+
+  .page-header__phone {
+    padding-left: 30px;
   }
 
   .page-header__phone::before {
@@ -639,6 +647,40 @@ ol {
   width: 280px;
   height: 150px;
   object-fit: cover;
+}
+
+@media (max-width: 1230px) {
+  .hotel__image {
+    margin-right: 50px;
+  }
+}
+
+@media (max-width: 1140px) {
+  .hotel__gallery {
+    justify-content: center;
+    row-gap: 30px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 960px) {
+  .hotel__main {
+    flex-wrap: wrap;
+  }
+
+  .hotel__image {
+    width: 100%;
+    height: 65vh;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    object-fit: cover;
+  }
+
+  .hotel__gallery {
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+  }
 }
 
 .price__title span {

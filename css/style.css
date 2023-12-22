@@ -719,6 +719,8 @@ ol {
 }
 
 .price__main {
+  position: relative;
+  z-index: 1;
   display: flex;
 }
 
@@ -763,7 +765,7 @@ ol {
   }
 
   .price__item {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
 }
 
@@ -866,6 +868,115 @@ ol {
 
 .request__form-button:hover {
   outline: 1px solid #e2ab3f;
+}
+
+@media (max-width: 1230px) {
+  .request__main {
+    padding: 0 50px;
+  }
+
+  .request__image {
+    width: 50%;
+  }
+}
+
+@media (max-width: 960px) {
+  .request .container {
+    flex-wrap: wrap;
+    row-gap: 50px;
+    padding: 0;
+  }
+
+  .request__main {
+    width: 100%;
+    padding: 0 100px;
+  }
+
+  .request__form {
+    margin-top: 60px;
+  }
+
+  .request__image {
+    width: 100%;
+    height: 65vh;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 620px) {
+  .request__main {
+    padding: 0 30px;
+  }
+
+  .request__date,
+  .request__price {
+    font-size: 64px;
+    line-height: 86px;
+  }
+
+  .request__date span,
+  .request__price span {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .request__date span {
+    margin-top: -15px;
+    margin-left: 145px;
+  }
+
+  .request__price span {
+    margin-top: -15px;
+    margin-left: 100px;
+  }
+
+  .request__form input {
+    padding: 12px 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  .request__main {
+    padding: 0 20px;
+  }
+
+  .request__date,
+  .request__price {
+    font-size: 48px;
+    line-height: 64px;
+  }
+
+  .request__date span,
+  .request__price span {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .request__date span {
+    margin-top: -10px;
+    margin-left: 125px;
+  }
+
+  .request__price span {
+    margin-top: -10px;
+    margin-left: 80px;
+  }
+
+  .request__form {
+    margin-top: 40px;
+  }
+
+  .request__form-title {
+    margin-bottom: 25px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .request__form input {
+    padding: 12px 20px;
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .page-footer {

@@ -821,7 +821,7 @@ ol {
 
 .request__date span {
   margin-top: -25px;
-  margin-left: 195px;
+  margin-left: 160px;
 }
 
 .request__price span {
@@ -981,7 +981,7 @@ ol {
 
 .page-footer {
   min-height: 100vh;
-  margin-top: 200px;
+  margin-top: clamp(50px, 10%, 200px);
   padding-top: 95px;
   background-color: #ecefe8;
   background-image: url(../images/bg-footer.jpg);
@@ -1005,6 +1005,7 @@ ol {
   background-image: url("../images/aerostat-footer.png");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 .page-footer__title {
@@ -1077,7 +1078,57 @@ ol {
 }
 
 .page-footer__copyright a {
+  margin-left: 10px;
   font-family: "Balqis", sans-serif;
   font-size: 24px;
   font-weight: 600;
+}
+
+@media (max-width: 1050px) {
+  .page-footer {
+    padding-top: 75px;
+  }
+
+  .page-footer__title,
+  .page-footer__slogan {
+    font-size: 80px;
+    line-height: 105px;
+  }
+}
+
+@media (max-width: 960px) {
+  .page-footer__main {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .page-footer__slogan {
+    width: 100%;
+    margin: 30px 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 620px) {
+  .page-footer {
+    padding-top: 50px;
+  }
+
+  .page-footer__contacts {
+    width: 300px;
+    height: 445px;
+    padding-top: 50px;
+  }
+
+  .page-footer__title {
+    margin-bottom: 30px;
+    font-size: 64px;
+    line-height: 86px;
+  }
+
+  .page-footer__slogan {
+    margin: 20px 0;
+    font-size: 50px;
+    line-height: 68px;
+  }
 }

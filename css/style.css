@@ -888,6 +888,7 @@ ol {
   }
 
   .request__main {
+    order: 2;
     width: 100%;
     padding: 0 100px;
   }
@@ -897,6 +898,7 @@ ol {
   }
 
   .request__image {
+    order: 1;
     width: 100%;
     height: 65vh;
     object-fit: cover;
@@ -980,7 +982,6 @@ ol {
 }
 
 .page-footer {
-  min-height: 100vh;
   margin-top: clamp(50px, 10%, 200px);
   padding-top: 95px;
   background-color: #ecefe8;
@@ -1107,6 +1108,10 @@ ol {
     margin: 30px 0;
     text-align: center;
   }
+
+  .page-footer__copyright {
+    padding-bottom: 5%;
+  }
 }
 
 @media (max-width: 620px) {
@@ -1130,5 +1135,28 @@ ol {
     margin: 20px 0;
     font-size: 50px;
     line-height: 68px;
+  }
+}
+
+@media (max-width: 375px) {
+  .page-footer {
+    padding-top: 40px;
+  }
+
+  .page-footer__contacts {
+    width: 270px;
+    height: 401px;
+    padding-top: 40px;
+  }
+
+  .page-footer__title {
+    margin-bottom: 25px;
+    font-size: 64px;
+    line-height: 86px;
+  }
+
+  .page-footer__slogan {
+    font-size: 42px;
+    line-height: 58px;
   }
 }

@@ -767,6 +767,10 @@ ol {
   .price__item {
     margin-bottom: 15px;
   }
+
+  .price__excluded .price__item:last-child {
+    margin-bottom: 0;
+  }
 }
 
 @media (max-width: 620px) {
@@ -1040,6 +1044,7 @@ ol {
   left: 0;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 .page-footer__phone::before {
@@ -1101,6 +1106,18 @@ ol {
   .page-footer__main {
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+  .page-footer__phone,
+  .page-footer__email {
+    padding-left: 35px;
+  }
+
+  .page-footer__phone::before,
+  .page-footer__email::before {
+    width: 25px;
+    height: 25px;
+    top: -2px;
   }
 
   .page-footer__slogan {

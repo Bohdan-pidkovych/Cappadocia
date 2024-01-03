@@ -132,8 +132,8 @@ ol {
   }
 
   .title span {
-    font-size: 16px;
-    line-height: 18px;
+    font-size: 18px;
+    line-height: 21px;
   }
 
   .button {
@@ -155,8 +155,8 @@ ol {
   }
 
   .title span {
-    font-size: 14px;
-    line-height: 16px;
+    font-size: 16px;
+    line-height: 18px;
   }
 
   .button {
@@ -382,7 +382,7 @@ ol {
   }
 
   .page-header__title span {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .info__title span {
@@ -476,6 +476,13 @@ ol {
   }
 }
 
+@media (max-width: 375px) {
+  .info__title span {
+    margin-top: -14px;
+    margin-left: 95px;
+  }
+}
+
 .trip__container {
   display: flex;
   max-width: 1920px;
@@ -541,6 +548,10 @@ ol {
     margin-bottom: 70px;
   }
 
+  .trip__title span {
+    margin-left: 305px;
+  }
+
   .trip__slider {
     width: 100%;
     margin-top: 75px;
@@ -554,7 +565,7 @@ ol {
 
   .trip__title span {
     margin-top: -17px;
-    margin-left: 120px;
+    margin-left: 215px;
   }
 
   .trip__slide-item img {
@@ -589,8 +600,8 @@ ol {
   }
 
   .trip__title span {
-    margin-top: -17px;
-    margin-left: 120px;
+    margin-top: -14px;
+    margin-left: 170px;
   }
 
   .day {

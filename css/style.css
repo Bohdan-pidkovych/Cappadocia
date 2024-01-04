@@ -708,6 +708,20 @@ ol {
   }
 }
 
+@media (max-width: 620px) {
+  .hotel__title span {
+    margin-top: -17px;
+    margin-left: 80px;
+  }
+}
+
+@media (max-width: 375px) {
+  .hotel__title span {
+    margin-top: -14px;
+    margin-left: 60px;
+  }
+}
+
 .price__title span {
   margin-top: -25px;
   margin-left: 120px;
@@ -785,8 +799,18 @@ ol {
 }
 
 @media (max-width: 620px) {
+  .price__title span {
+    margin-top: -17px;
+    margin-left: 80px;
+  }
+
   .price__main {
     row-gap: 20px;
+  }
+
+  .price__included,
+  .price__excluded {
+    padding-right: 25px;
   }
 
   .price__subtitle {
@@ -797,6 +821,11 @@ ol {
 }
 
 @media (max-width: 375px) {
+  .price__title span {
+    margin-top: -14px;
+    margin-left: 60px;
+  }
+
   .price__subtitle {
     font-size: 18px;
     line-height: 21px;
@@ -947,6 +976,12 @@ ol {
     margin-left: 100px;
   }
 
+  .request__form-title {
+    margin-bottom: 30px;
+    font-size: 21px;
+    line-height: 24px;
+  }
+
   .request__form input {
     padding: 12px 20px;
   }
@@ -984,9 +1019,9 @@ ol {
   }
 
   .request__form-title {
-    margin-bottom: 25px;
-    font-size: 20px;
-    line-height: 24px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 21px;
   }
 
   .request__form input {
@@ -1039,6 +1074,8 @@ ol {
   position: relative;
   display: inline-block;
   padding-left: 40px;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .page-footer__phone {
@@ -1181,6 +1218,12 @@ ol {
     margin-bottom: 25px;
     font-size: 64px;
     line-height: 86px;
+  }
+
+  .page-footer__phone,
+  .page-footer__email {
+    font-size: 16px;
+    line-height: 18px;
   }
 
   .page-footer__slogan {

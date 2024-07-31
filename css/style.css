@@ -320,6 +320,7 @@ ol {
 @media (max-width: 620px) {
   .page-header .container {
     height: 100dvh;
+    transition: height 0.2s linear;
   }
 
   .page-header__info {
